@@ -1,0 +1,45 @@
+# --- SECRETS & CREDENTIALS (CRITICAL) ---
+.env
+.env.*
+*.pem
+*.key
+*.cert
+secrets.json
+credentials.json
+auth.json
+*.p12
+.netrc
+
+# --- PYTHON & ENVIRONMENTS ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.Python
+build/
+dist/
+
+# --- ML MODELS & DATA (PREVENT LARGE LEAKS) ---
+# Do not track weights or datasets
+*.bin
+*.pth
+*.safetensors
+*.ckpt
+*.onnx
+models/
+data/
+datasets/
+checkpoint-*/
+
+# --- EXPERIMENT TRACKING ---
+wandb/
+mlruns/
+lightning_logs/
+.cache/
+
+# --- IDE & SYSTEM ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
